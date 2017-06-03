@@ -5,6 +5,6 @@ This is only a static page, nothing fancy but the differents CSS & JS libs used:
 * [Google Map API](https://developers.google.com/maps/).
 * [amCharts](https://www.amcharts.com/).
 
-What are we talking here: HTML 5, CSS 3, JS Native.
+What are we talking here: HTML 5, CSS 3, JS Native, responsive static web page.
 
 This code was released in 2014 and nothing was updates so be indulgent ;)...
