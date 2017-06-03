@@ -1,0 +1,123 @@
+// ==ClosureCompiler==
+// @compilation_level SIMPLE_OPTIMIZATIONS
+// @output_file_name amcharts.min.js
+// @code_url http://www.amcharts.com/lib/3/amcharts.js
+// @code_url http://www.amcharts.com/lib/3/themes/none.js
+// @code_url http://www.amcharts.com/lib/3/radar.js
+// ==/ClosureCompiler==
+
+function initializeSkills(){
+	
+	var chart = AmCharts.makeChart("keyskills", {
+	    "type": "radar",
+	    "theme": "none",
+	    "dataProvider": [{
+	        "skillname": "HTML 5",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "CSS 3",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "JavasScript and JQuery",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "AngularJS",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "Java SE-EE",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "Hibernate 3",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "JPA 2",
+	        "skillpercent": 90
+	    }, {
+	        "skillname": "EJB 3",
+	        "skillpercent": 50
+	    }, {
+	        "skillname": "Spring 3",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "Struts (1.2.9)",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "Spring MVC",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "JSF (1.1, 1.2, 2)",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "Servlet 2.2",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "CXF Web Services",
+	        "skillpercent": 70
+	    }, {
+	        "skillname": "Primefaces (3.5, 4)",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "GlassFish",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "WebSphere",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "Apache Tomcat",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "JBoss AS7",
+	        "skillpercent": 80
+	    }, {
+	        "skillname": "Eclipse Dev and  API",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "PostgresSQL",
+	        "skillpercent": 70
+	    }, {
+	        "skillname": "Oracle",
+	        "skillpercent": 30
+	    }, {
+	        "skillname": "Hudson, Jenkins",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "Ant, Maven",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "CVS, SVN, GIT",
+	        "skillpercent": 100
+	    }, {
+	        "skillname": "SonarQube (PMD, Checkstyle)",
+	        "skillpercent": 90
+	    }, {
+	        "skillname": "Selenium IDE",
+	        "skillpercent": 80
+	    }],
+	    "colors" : ["#5cb85c"],
+	    "valueAxes": [{
+	        "axisTitleOffset": 20,
+	        "minimum": 0,
+	        "maximum": 100,
+	        "axisAlpha": 0.15,
+	        "fillColor" : "#357ebd",
+	        "fillAlpha" : "0.05"
+	    }],
+	    "startDuration": 0,
+	    "graphs": [{
+	        "balloonText": "[[category]] : <b>[[value]] %</b>",
+	        "bullet": "round",
+	        "valueField": "skillpercent",
+	        "legendValueText" : "APPPPPPPPPPPPPp"
+	    }],
+	    "categoryField": "skillname",
+	    "exportConfig": {
+	        "menuTop":"10px",
+	        "menuRight":"10px",
+	        "menuItems": [{
+	            "icon": '/lib/3/images/exportskills.png',
+	            "format": 'png'
+	        }]
+	    }
+	});
+	
+}

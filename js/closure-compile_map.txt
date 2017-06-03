@@ -1,0 +1,143 @@
+
+// Initilize googlemap vars
+var geocoder;
+var map1;
+
+// Casablanda LatLng
+var casablanca = new google.maps.LatLng(33.578456, -7.606636);
+
+// Pessac LatLng
+var pessac = new google.maps.LatLng(44.8066666667, 0.631111111111);
+
+// Tampa LatLng
+var tampa = new google.maps.LatLng(27.970833, -82.464722);
+
+// ================= French translation ===============
+var pessacDescriptionContentFR = '<div class="marker_info_style">'
+		+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE SOFTWARE Bordeaux <hr /></h6>'
+		+ '<p>Employ&eacute; quatre ans &agrave; <strong>BLU AGE SOFTWARE Bordeaux</strong> comme contributeur principal au logiciel Blu Age Forward.</p>'
+		+ '</div>';
+var tampaDescriptionContentFR = '<div  class="marker_info_style">'
+		+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE CORPORATION Tampa <hr /></h6>'
+		+ '<p>Aujourd\'hui &agrave; <strong>BLU AGE CORPORATION Tampa</strong> pour ouvrir une nouvelle agence bas&eacute; sur le partenariat entre <strong>Accenture</strong> &bsol; <strong>BLU AGE</strong>.</p>'
+		+ '</div>';
+var casablancaDescriptionContentFR = '<div class="marker_info_style">'
+		+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE SOFTWARE Casablanca <hr /></h6>'
+		+ '<p>En mission durant neuf mois au total &agrave; <strong>BLU AGE SOFTWARE Casablanca</strong> en tant que d&eacute;veloppeur de composant de g&eacute;n&eacute;ration et chef de projet offshore.</p>'
+		+ '</div>';
+
+//================= English translation ===============
+var pessacDescriptionContent = '<div class="marker_info_style">'
+	+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE SOFTWARE Bordeaux <hr /></h6>'
+	+ '<p>Worked for four years in <strong>BLU AGE SOFTWARE Bordeaux</strong> as main contributor on the <strong>Blu Age Forward</strong> product.</p>'
+	+ '</div>';
+var tampaDescriptionContent = '<div  class="marker_info_style">'
+	+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE CORPORATION Tampa <hr /></h6>'
+	+ '<p>Now in <strong>BLU AGE CORPORATION Tampa</strong> to open a new branch based on the <strong>Accenture</strong> &bsol; <strong>BLU AGE</strong> premium partnership.</p>'
+	+ '</div>';
+var casablancaDescriptionContent = '<div class="marker_info_style">'
+	+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE SOFTWARE Casablanca <hr /></h6>'
+	+ '<p>Worked for 9 months in <strong>BLU AGE SOFTWARE Casablanca</strong> as component developper, offshore team manager.</p>'
+	+ '</div>';
+
+//================= Spanish translation ===============
+var pessacDescriptionContentES = '<div class="marker_info_style">'
+	+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE SOFTWARE Bordeaux <hr /></h6>'
+	+ '<p>Trabaje quatro a�os a <strong>BLU AGE SOFTWARE Bordeaux</strong> como principal colaborador al desarrollo del sofware <strong>Blu Age Forward</strong>.</p>'
+	+ '</div>';
+var tampaDescriptionContentES = '<div  class="marker_info_style">'
+	+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE CORPORATION Tampa <hr /></h6>'
+	+ '<p>Estoy ahora a <strong>BLU AGE CORPORATION Tampa</strong> para abrir una agencia radicado en la colaboracion entre <strong>Accenture</strong> &bsol; <strong>BLU AGE</strong>.</p>'
+	+ '</div>';
+var casablancaDescriptionContentES = '<div class="marker_info_style">'
+	+ '<h6><span class="glyphicon glyphicon-pushpin"></span> BLU AGE SOFTWARE Casablanca <hr /></h6>'
+	+ '<p>Trabaje nueve meses en <strong>BLU AGE SOFTWARE Casablanca</strong> como programador de componentos de generaci&oacute;n y como encargado de equipo offshore.</p>'
+	+ '</div>';
+// Initialise all the locations.
+function initializeMaps(lang) {
+
+	//  
+	var pessacDesc = "";
+	var casablancaDesc = "";
+	var tampaDesc = "";
+
+	// Initialize the language
+	if(lang =="FR"){
+		pessacDesc = pessacDescriptionContentFR;
+		casablancaDesc = casablancaDescriptionContentFR;
+		tampaDesc = tampaDescriptionContentFR;
+	} else if(lang == "ES"){
+		pessacDesc = pessacDescriptionContentES;
+		casablancaDesc = casablancaDescriptionContentES;
+		tampaDesc = tampaDescriptionContentES;
+	}else {
+		pessacDesc = pessacDescriptionContent;
+		casablancaDesc = casablancaDescriptionContent;
+		tampaDesc = tampaDescriptionContent;
+	}
+	
+	var myOptions = {
+		center : new google.maps.LatLng(40, -25),
+		zoom : 2,
+		mapTypeId : google.maps.MapTypeId.ROADMAP,
+		disableDefaultUI : true,
+		scrollwheel : false
+	// , draggable : false
+	};
+
+	// Initialize the map.
+	map1 = new google.maps.Map(document.getElementById("map-top1"),
+			myOptions);
+
+	// Create Casablanca Marker
+	var casablancaMarker = new google.maps.Marker({
+		position : casablanca,
+		title : "Casablanca"
+	});
+
+	// Create Pessac Marker
+	var pessacMarker = new google.maps.Marker({
+		position : pessac,
+		title : "Pessac"
+	});
+
+	// Create Tampa Marker
+	var tampaMarker = new google.maps.Marker({
+		position : tampa,
+		title : "Tampa"
+	});
+
+	// Init info windows.
+	var pessacInfoWindow = new google.maps.InfoWindow({
+		content : pessacDesc
+	});
+	var casablancaInfoWindow = new google.maps.InfoWindow({
+		content : casablancaDesc
+	});
+	var tampaInfoWindow = new google.maps.InfoWindow({
+		content : tampaDesc
+	});
+
+	// Set the marker to the map.
+	casablancaMarker.setMap(map1);
+	pessacMarker.setMap(map1);
+	tampaMarker.setMap(map1);
+
+	// Add the info window to the corresponding marker.
+	makeInfoWindowEvent(map1, pessacInfoWindow, pessacMarker);
+	makeInfoWindowEvent(map1, casablancaInfoWindow, casablancaMarker);
+	makeInfoWindowEvent(map1, tampaInfoWindow, tampaMarker);
+
+}
+
+/**
+ * Add the infor window to the selected marker.
+ * @param {map} The google map object.
+ * @param {infowindow} The google infor window object.
+ * @param {marker} The marker to set the info window.
+ */
+function makeInfoWindowEvent(map, infowindow, marker) {
+	google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map, marker);
+	});
+}

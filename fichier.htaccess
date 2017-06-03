@@ -1,0 +1,5 @@
+AuthUserFile  /homez.375/juliansasm/www/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Restricted Area"
+AuthType Basic
+require valid-user

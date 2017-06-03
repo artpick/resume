@@ -1,0 +1,52 @@
+, {
+        "country": "JAVA SE-EE",
+        "visits": 100
+    }, {
+        "country": ".NET",
+        "visits": 10
+    }, {
+        "country": "Hibernate 3",
+        "visits": 90
+    }, {
+        "country": "JPA 2",
+        "visits": 90
+    }, {
+        "country": "EJB 3",
+        "visits": 50
+    }, {
+        "country": "Spring 3",
+        "visits": 90
+    }, {
+        "country": "Struts 1",
+        "visits": 90
+    }, {
+        "country": "Spring MVC",
+        "visits": 90
+    }, {
+        "country": "JSF (1.1, 1.2, 2.2)",
+        "visits": 90
+    }, {
+        "country": "Servlet",
+        "visits": 80
+    }, {
+        "country": "CXF Web Services",
+        "visits": 80
+    }, {
+        "country": "Primefaces (3.5, 4.0)",
+        "visits": 90
+    }, {
+        "country": "GlassFish",
+        "visits": 50
+    }, {
+        "country": "WebSphere",
+        "visits": 50
+    }, {
+        "country": "Apache Tomcat",
+        "visits": 50
+    }, {
+        "country": "JBoss AS 7",
+        "visits": 50
+    }, {
+        "country": "EJB 3",
+        "visits": 50
+    }
