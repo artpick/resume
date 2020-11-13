@@ -113,18 +113,18 @@ function initializeSkills(){
 	
 }
 
-// Initilize googlemap vars
+// Initilize Xmap vars
 var geocoder;
 var map1;
 
 // Casablanda LatLng
-var casablanca = new google.maps.LatLng(33.578456, -7.606636);
+var casablanca =  L.latLng(33.578456, -7.606636);
 
 // Pessac LatLng
-var pessac = new google.maps.LatLng(44.8066666667, 0.631111111111);
+var pessac =  L.latLng(44.8066666667, 0.631111111111);
 
 // Tampa LatLng
-var tampa = new google.maps.LatLng(27.970833, -82.464722);
+var tampa =  L.latLng(27.970833, -82.464722);
 
 // ================= French translation ===============
 var pessacDescriptionContentFR = '<div class="marker_info_style">'
@@ -190,68 +190,56 @@ function initializeMaps(lang) {
 		tampaDesc = tampaDescriptionContent;
 	}
 	
-	var myOptions = {
+	/*var myOptions = {
 		center : new google.maps.LatLng(40, -25),
 		zoom : 2,
 		mapTypeId : google.maps.MapTypeId.ROADMAP,
 		disableDefaultUI : true,
 		scrollwheel : false
 	// , draggable : false
-	};
+	};*/
 
 	// Initialize the map.
-	map1 = new google.maps.Map(document.getElementById("map-top1"),
-			myOptions);
+	var map1 = L.map('map-top1',{center: [40, -25], zoom:2});
 
+	/*map1 = new google.maps.Map(document.getElementById("map-top1"),
+			myOptions);
+*/
 	// Create Casablanca Marker
-	var casablancaMarker = new google.maps.Marker({
-		position : casablanca,
+	var casablancaMarker = L.marker(casablanca,{
 		title : "Casablanca"
 	});
 
 	// Create Pessac Marker
-	var pessacMarker = new google.maps.Marker({
-		position : pessac,
+	var pessacMarker = L.marker(pessac,{
 		title : "Pessac"
 	});
 
 	// Create Tampa Marker
-	var tampaMarker = new google.maps.Marker({
-		position : tampa,
+	var tampaMarker = L.marker(tampa,{
 		title : "Tampa"
 	});
 
 	// Init info windows.
-	var pessacInfoWindow = new google.maps.InfoWindow({
-		content : pessacDesc
-	});
-	var casablancaInfoWindow = new google.maps.InfoWindow({
-		content : casablancaDesc
-	});
-	var tampaInfoWindow = new google.maps.InfoWindow({
-		content : tampaDesc
-	});
+	var pessacInfoWindow = L.popup()
+	.setLatLng([51.5, -0.09])
+	.setContent(pessacDesc);
+
+	var casablancaInfoWindow = L.popup()
+	.setLatLng([51.5, -0.09])
+	.setContent(casablancaDesc);
+	var tampaInfoWindow = L.popup()
+	.setLatLng([51.5, -0.09])
+	.setContent(tampaDesc);
 
 	// Set the marker to the map.
-	casablancaMarker.setMap(map1);
-	pessacMarker.setMap(map1);
-	tampaMarker.setMap(map1);
+	casablancaMarker.bindPopup(casablancaInfoWindow).addTo(map1);
+	pessacMarker.bindPopup(pessacInfoWindow).addTo(map1);
+	tampaMarker.bindPopup(tampaInfoWindow).addTo(map1);
 
-	// Add the info window to the corresponding marker.
-	makeInfoWindowEvent(map1, pessacInfoWindow, pessacMarker);
-	makeInfoWindowEvent(map1, casablancaInfoWindow, casablancaMarker);
-	makeInfoWindowEvent(map1, tampaInfoWindow, tampaMarker);
-
-}
-
-/**
- * Add the infor window to the selected marker.
- * @param {map} The google map object.
- * @param {infowindow} The google infor window object.
- * @param {marker} The marker to set the info window.
- */
-function makeInfoWindowEvent(map, infowindow, marker) {
-	google.maps.event.addListener(marker, 'click', function() {
-		infowindow.open(map, marker);
-	});
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		maxZoom: 2,
+		id: 'mapbox.streets'
+	}).addTo(map1);
 }
