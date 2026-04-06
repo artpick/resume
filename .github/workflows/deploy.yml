@@ -18,6 +18,8 @@ jobs:
           local-dir: ./public/
           server-dir: /home/juliansasm
           dangerous-clean-slate: true
+        env:
+          ENVIRONMENT: prod
 
       - name: Verify deployment
         run: |
