@@ -200,12 +200,8 @@ public/
 - ✅ GitHub Actions setup (Done)
 - ⏳ Multilingual support (FR/ES)
 - ⏳ SEO optimization
-- ⏳ Blog section
 
 **Future Features**:
-- Contact form with anti-spam
-- Project portfolio section
-- Dark mode toggle
 - Accessibility improvements
 
 ## 📝 Changelog
@@ -243,7 +239,6 @@ This is a personal project, but contributions are welcome:
 - Internationalization (FR/ES)
 - Accessibility improvements
 - Performance optimizations
-- New sections (blog, projects)
 
 ## 📄 License
 
@@ -259,8 +254,6 @@ This is a personal project, but contributions are welcome:
 - [LinkedIn](https://www.linkedin.com/in/juliansabos/)
 - [GitHub](https://github.com/artpick)
 - [Personal Website](https://www.julian-sabos.com/)
-
-📧 **Email**: artpick@gmail.com
 
 ---
 
