@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "theme": "short"
+  },
+  "basics": {
+    "name": "☕ Julian ⌨️ Sabos",
+    "label": "Swiss knife Programmer",
+    "picture": "images/julian_profile.jpeg",
+    "email": "julian.sabos[at]gmail.com",
+    "website": "",
+    "summary": "In my career I have faced technical issues with high responsibility and always strive to meet assigned deadlines. My studies and job have brought me experience in many areas. I enjoy learning new things and keeping up with the fast pace of technology. I am very adaptable in different environments and also a creative problem solver. I am currently looking to share my skills through teamwork and to always strive to improve my programming skills. I am interested in Agile and CI/CD. When writing code I take responsibility for my work, I am precise and meticulous. I take great pride in my work quality.",
+    "location": {
+      "countryCode": "FR",
+      "address": "France"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "artpick",
+        "url": "https://github.com/artpick"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "juliansabos",
+        "url": "https://www.linkedin.com/in/juliansabos/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Nuxeo",
+      "highlights": [
+        "Promote the use of new product features",
+        "Share knowledge across the Professionnal Services team",
+        "Being successfull on top 40 Forbes largest company tier one app migration project"
+      ],
+      "position": "Senior Implementation Engineer",
+      "startDate": "2018-06-30",
+      "summary": "Implement customer’s requirements, advice on implementation approaches, weigh technical solutions based upon development timing, quality, infrastructure constraints, customer’s dream and feasibility. Gather customer’s requirements from the kickstart project’s phase, feed the Jira board with user stories.",
+      "website": "https://www.nuxeo.com/"
+    },
+    {
+      "company": "SFEIR",
+      "endDate": "2018-06-30",
+      "highlights": [
+        "Create new technical tests to evaluate candidate",
+        "Evaluate candidate during the recruitement process",
+        "Share knowledge during tech sharing sessions",
+        "POC Company's time tracking phone app"
+      ],
+      "position": "Java EE Consultant",
+      "startDate": "2015-05-31",
+      "summary": "Participated to various side / internal projects. See below my tech sharing session about Java G1GC and JVisual VM.",
+      "website": "https://www.sfeir.com/en"
+    },
+    {
+      "company": "JCDecaux",
+      "endDate": "2018-06-30",
+      "highlights": [
+        "Convince against bias such as \"This is an old app we don't need tests\"",
+        "Provide metrics to increase code quality",
+        "Promote unit and integration tests"
+      ],
+      "position": "Full Stack Developer (SFEIR)",
+      "startDate": "2017-11-30",
+      "summary": "Maintain and add new features on existing applications in charge of planning the outdoor furnitures maintenance.",
+      "website": "https://www.jcdecaux.fr/"
+    },
+    {
+      "company": "GROUPE M6",
+      "endDate": "2017-11-30",
+      "highlights": [
+        "Rebuild the delivery process CI/CD (experience Chat/Ops)",
+        "Fix 5 years old performance issue",
+        "Use Java Proxy over JDBC connection to reverse first tier app business logic",
+        "Provide good quality index (Sonar, Fitnesse)"
+      ],
+      "position": "Full Stack Developer (SFEIR)",
+      "startDate": "2016-01-31",
+      "summary": "Maintain / migrate / rewrite five applications in charge of the Advertising Network.",
+      "website": "https://www.groupem6.fr/"
+    },
+    {
+      "company": "Kyriba France",
+      "endDate": "2016-01-31",
+      "highlights": [
+        "Implement features",
+        "Propose a different vision on the existing product in terms of refactoring",
+        "Provide tool facilitations to help the day to day job"
+      ],
+      "position": "Full Stack Developer (SFEIR)",
+      "startDate": "2015-06-30",
+      "summary": "Participate to strategic busines app.",
+      "website": "https://www.kyriba.fr/"
+    },
+    {
+      "company": "Blu Age",
+      "endDate": "2014-12-31",
+      "highlights": [
+        "Conception and realization of Eclipse IDE plugins to enhance the Blu Age software usability",
+        "Optimization of technical architecture",
+        "Intern and extern communication (India, Morocco, USA)"
+      ],
+      "position": "R&D Software Engineer",
+      "startDate": "2013-05-31",
+      "summary": "As the US subsidiary of Netfective Technology, Blu Age Corporation wanted to open a new office in Tampa FL and reinforce their partnership with Accenture.",
+      "website": "https://www.bluage.com/"
+    },
+    {
+      "company": "Netfective Technology",
+      "endDate": "2013-05-31",
+      "highlights": [
+        "Creation, fixes and improvement of generation cartridge for Blu Age Software",
+        "Analysis and architectural conception of Java applications",
+        "Management and enhancement of the automated build of the Eclipse based Blu Age product"
+      ],
+      "position": "R&D Software Engineer",
+      "startDate": "2009-02-28",
+      "summary": "Main stakeholder to provide evolutions and maintain the Blu Age ® Forward Engineering product.",
+      "website": "https://www.bluage.com/"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Université de Pau et des Pays de l'Adour",
+      "area": "Information Technology",
+      "studyType": "Master's degree",
+      "startDate": "2007-12-31",
+      "endDate": "2009-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Université de Valenciennes et du Hainaut-Cambrésis",
+      "area": "Information Technology",
+      "studyType": "Bachelor's degree",
+      "startDate": "2006-12-31",
+      "endDate": "2007-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Université de Valenciennes et du Hainaut-Cambrésis",
+      "area": "Information Technology",
+      "studyType": "Bachelor of Technology (BTech) Higher National Diploma",
+      "startDate": "2004-12-31",
+      "endDate": "2006-12-31",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "publications": [
+    {
+      "name": "G1-GC",
+      "publisher": "Julian Sabos",
+      "releaseDate": "2017-12-10",
+      "website": "QuarterBack_G1GC.pdf",
+      "summary": "Let's talk about the new default Garbage Collector G1-GC, have some inputs about what is exactly a garbage collector, what's exactly new about it and why we talk about it now but G1 was release the first time in 2009 with Java SE 6 Update 14."
+    },
+    {
+      "name": "Diagnose with VisualVM && || Java Mission Control",
+      "publisher": "Julian Sabos",
+      "releaseDate": "2017-09-04",
+      "website": "QuarterBack_VisualVM_Java-Mission-Control.pdf",
+      "summary": "How to diagnose and isolate unexpected behaviours in your Java application using JDK tools."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java Fullstack",
+      "level": "",
+      "keywords": [
+        "Java",
+        "Kotlin",
+        "Spring Ecosystem",
+        "JPA",
+        "Hibernate",
+        "MongoDB",
+        "Kafka",
+        "Elasticsearch",
+        "Git",
+        "Maven",
+        "SQL",
+        "Sonar",
+        "JUnit",
+        "Fitnesse"
+      ]
+    },
+    {
+      "name": "Devops",
+      "level": "",
+      "keywords": [
+        "Jenkins",
+        "Shell",
+        "RocketChat",
+        "Gitlab",
+        "ChatOps",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": [
+        "JIRA",
+        "Agile",
+        "Scrum",
+        "Confluence"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": [
+        "TDD",
+        "DDD",
+        "MVC Architecture"
+      ]
+    },
+    {
+      "name": "Functionnal and co",
+      "keywords": [
+        "OCaml",
+        "Scala"
+      ]
+    },
+    {
+      "name": "Misc",
+      "keywords": [
+        "Intellij",
+        "Eclipse",
+        "HTML5",
+        "CSS3",
+        "jQuery",
+        "Python",
+        "Angular",
+        "Ant",
+        "Groovy",
+        "Karma",
+        "Jasmine",
+        "UML"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "fr",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "en",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "es",
+      "fluency": "Professional working proficency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Hicking",
+        "Woofing"
+      ]
+    },
+    {
+      "name": "Coffee",
+      "keywords": [
+        "Aeropress",
+        "Expresso"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Julie L.",
+      "reference": "Julian was an amazing colleague : Not only for his good technical skills, he has also a capacity of adaptability in various domains. He is able to explain conception features with technical and functional teams. As a project manager, this is a person that we can trust and exchange a lot because he was very available to help us.\nIt was a pleasure to work with him. "
+    },
+    {
+      "name": "Guillaume Brusset",
+      "reference": "Julian is not only a very high technical person, but also a very good teammate\nI have the pleasure to work with Julian during a project at Kyriba it was a real pleasure to work with him because\n- he was involved in is working,\n- he has a very good knowledge of Java technology and the Java environment \nand in addition of his technical skill, he was working for the team with a mindset of constant improvement.\n\nI would be very happy to work with him again"
+    },
+    {
+      "name": "Youssef RIDENE, Ph.D.",
+      "reference": "Julian shows a deep technological knowledge and high efficiency in projects with tight deadlines. This is not often found in one person. And he gets things done. He never gives up. Strongly recommended"
+    }
+  ]
+}

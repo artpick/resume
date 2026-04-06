@@ -1,0 +1,1089 @@
+<!doctype html>
+<html>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>☕ Julian ⌨️ Sabos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+	<style>
+		/********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom reset */
+.main-summary p,
+#publications .item,
+#skills .item,
+#languages .item,
+#references .item,
+#interests .item{
+	margin: 0;
+}
+
+
+/****************
+*		SMARTPHONES
+****************/
+em {
+	color: #757575;
+}
+p {
+	margin: 1em 0;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+strong {
+	font-weight: 700;
+	font-size: 1.1em;
+}
+ul {
+	margin-top: 1em;
+}
+div.item {
+	margin: 1em 0 2em;
+	padding-bottom: 2em;
+}
+div.item:last-of-type {
+	margin: 0;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+p {
+	text-align: justify;
+}
+
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2,
+h3 {
+	font-size: 1rem;
+}
+a {
+	color: #EB5F51;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Layout */
+body {
+	background: #f2f2f2;
+	line-height: 1.6;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#resume {
+	padding: 1rem 0;
+	margin: 1rem auto;
+}
+
+#header {
+	padding: 0 1em;
+	margin-bottom: 1em;
+}
+
+#resume > header div {
+	display: table;
+	padding-left: 0.5em;
+}
+
+#resume > header div.middle {
+	padding-top: 1.5em;
+}
+
+header img {
+	display: block;
+	width: 10em;
+	border-radius: 0.275em;
+	float: right;
+}
+
+header .name {
+	line-height: 1;
+}
+
+header .label {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #757575;
+}
+
+section:not(.section) {
+	padding: .5em 1rem;
+}
+
+section#references {
+	border-bottom:none;
+}
+
+section#basics {
+	background: inherit;
+	margin-bottom: 0;
+}
+
+section#skills {
+	padding-bottom: 0;
+}
+
+section#education,
+section#work,
+.main-summary section {
+	padding-bottom: 1em;
+}
+
+header::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+h2.section-title {
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #757575;
+	padding: 1em 1rem 0;
+	margin-bottom: 0.1275em;
+}
+
+.date {
+	font-weight: 700;
+	color: #757575;
+}
+
+.position, .area, .institution {
+	font-weight: 700;
+}
+
+#interests .item, #languages .item {
+	padding: 0 1em 1em 0;
+	border-bottom: none;
+}
+
+.website::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+	content: '\f14c';
+}
+
+#profiles, #skills, #interests, #languages {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+  padding-bottom: 1em;
+}
+
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
+}
+
+#profiles .item {
+	margin: 0;
+	padding: 0;
+	padding-right: 1em;
+	border-bottom: none;
+}
+
+#interests ul {
+	margin-top: 0.5em;
+}
+
+#publications .name {
+	font-style: italic;
+}
+
+.courses li, .keywords li{
+	display: inline-block;
+	background: #f0f0f0;
+	font-size: 0.9em;
+	line-height: 1;
+	color: #333;
+	padding: 0.4em 0.8em;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+#publications .date {
+	font-weight: normal;
+	color: #000;
+}
+
+#skills .item {
+	min-width: 15em;
+	padding: 0 .5em .8em 0;
+	border-bottom: none;
+}
+
+
+/* Skills chart */
+#skills .level .bar {
+	border: 1px solid #ddd;
+	display: block;
+	width: 10em;
+	height: 5px;
+	margin: 0em 0 1em 0;
+	position: relative;
+}
+
+#skills .level .bar::after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	background: black;
+	height: 5px;
+}
+
+#skills .level.beginner .bar::after {
+	background: #EB5F51;
+	width: 2.5em;
+}
+
+#skills .level.intermediate .bar::after {
+	background: #ffdf1f;
+	width: 5em;
+}
+
+#skills .level.advanced .bar::after {
+	background: #59C596;
+	width: 7.5em;
+}
+
+#skills .level.master .bar::after {
+	background: #5CB85C;
+	width: 10em;
+}
+
+#references .item {
+	padding-left: 1em;
+	border-left: 5px solid #EB5F51;
+}
+
+.fa.social {
+	margin-right: 0.25em;
+	font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+.google-plus {
+	color: #dd4b39;
+}
+
+.tumblr {
+	color:#32506d;
+}
+
+.foursquare {
+	color:  #0072b1;
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.linkedin {
+	color: #007bb6;
+}
+
+.pinterest {
+	color: #cb2027;
+}
+
+.dribbble {
+	color: #ea4c89;
+}
+
+.instagram {
+	color: #517fa4;
+}
+
+.twitter {
+	color: #00aced;
+}
+
+.soundcloud {
+	color: #ff3a00;
+}
+
+.wordpress {
+	color: #21759b;
+}
+
+.youtube {
+	color: #bb0000;
+}
+
+.github {
+	color: #171515;
+}
+
+.stack-overflow {
+	color: #828386;
+	position: relative;
+}
+
+.flickr {
+	color: #ff0084;
+}
+
+.stack-overflow::after {
+	position: absolute;
+	left: 0;
+	content: '\f16c';
+	color: #f68a1f;
+	overflow: hidden;
+	height: 40%;
+}
+
+/******************
+*		HELPER CLASSES
+******************/
+.fa {
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+}
+
+.clear {
+	display: table;
+	clear: both;
+}
+
+
+/****************
+*		TABLET
+****************/
+@media screen and (min-width: 602px) {
+
+	#resume {
+		width: 550px;
+		margin: 0 auto;
+	}
+	section > header > h3 {
+		float:left;
+	}
+	section > header > .date {
+		float: right;
+		line-height: 1.3;
+	}
+
+}
+
+
+/****************
+*		LAPTOP
+****************/
+@media screen and (min-width: 1025px) {
+
+	#resume {
+		width: 650px;
+		padding: 3em;
+		margin: 3em auto;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	}
+
+	.section {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		border-bottom: 1px solid #eee;
+	}
+
+	.section:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	section > header {
+		line-height: 1;
+		padding-bottom: 1em;
+	}
+
+	h2.section-title {
+		line-height: 1.1;
+		padding-top: 0;
+	}
+
+	section:not(.section) {
+		width: 34.5em;
+		padding: 0 1em 1em 0;
+		margin-top:0;
+		border: none;
+	}
+
+	section p {
+		margin: 0;
+	}
+
+	section#basics {
+		width: auto;
+		padding-top: 1em;
+		padding-left: 1em;
+		padding-bottom: 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+	#profiles .item{
+		padding-bottom: 1em;
+	}
+
+	div {
+		padding: 0;
+	}
+
+	#skills .item {
+		padding-left:0;
+		margin-top: 0;
+	}
+
+	div.item {
+		margin-top: 0;
+		border-bottom: 1px solid #eee;
+	}
+
+}
+
+	</style>
+
+
+	<body>
+		<div id="resume">
+				<header id="header">
+						<img src="images/julian_profile.jpeg" alt="☕ Julian ⌨️ Sabos"/>
+						<div class="middle">
+							<h1 class="name">☕ Julian ⌨️ Sabos</h1>
+							<h2 class="label">Swiss knife Programmer</h2>
+						</div>
+
+				</header>
+
+				<section id="basics">
+
+						<div id="location">
+							<span class="fa fa-map-marker"></span>
+							<span class="address">
+								France,
+							</span>
+							<span class="countryCode">
+								(FR),
+							</span>
+						</div>
+
+					<div id="contact">
+						<div class="email">
+							<span class="fa fa-envelope"></span>
+							<a href="mailto:julian.sabos[at]gmail.com">julian.sabos[at]gmail.com</a>
+						</div>
+					</div>
+
+
+					<div id="profiles">
+						<div class="item">
+							<span class="network fa fa-github github"></span>
+							<span class="username">
+								<span class="url">
+									<a href="https://github.com/artpick">artpick</a>
+								</span>
+							</span>
+						</div>
+						<div class="item">
+							<span class="network fa fa-linkedin linkedin"></span>
+							<span class="username">
+								<span class="url">
+									<a href="https://www.linkedin.com/in/juliansabos/">juliansabos</a>
+								</span>
+							</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="section main-summary">
+					<h2 class='section-title'>About</h2>
+					<section>
+						<p>In my career I have faced technical issues with high responsibility and always strive to meet assigned deadlines. My studies and job have brought me experience in many areas. I enjoy learning new things and keeping up with the fast pace of technology. I am very adaptable in different environments and also a creative problem solver. I am currently looking to share my skills through teamwork and to always strive to improve my programming skills. I am interested in Agile and CI/CD. When writing code I take responsibility for my work, I am precise and meticulous. I take great pride in my work quality.</p>
+					</section>
+				</section>
+
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Experience</h2>
+					<section id="work">
+						<header>
+							<h3 class="name">
+								Nuxeo
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									June 2018
+								</span>
+								<span class="endDate">
+									- Present
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Senior Implementation Engineer
+						</div>
+						<div class="website">
+							<a href="https://www.nuxeo.com/">https://www.nuxeo.com/</a>
+						</div>
+						<div class="summary">
+							<p>Implement customer’s requirements, advice on implementation approaches, weigh technical solutions based upon development timing, quality, infrastructure constraints, customer’s dream and feasibility. Gather customer’s requirements from the kickstart project’s phase, feed the Jira board with user stories.</p>
+						</div>
+						<ul class="highlights">
+							<li>Promote the use of new product features</li>
+							<li>Share knowledge across the Professionnal Services team</li>
+							<li>Being successfull on top 40 Forbes largest company tier one app migration project</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								SFEIR
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									May 2015
+								</span>
+								<span class="endDate">
+									- June 2018
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Java EE Consultant
+						</div>
+						<div class="website">
+							<a href="https://www.sfeir.com/en">https://www.sfeir.com/en</a>
+						</div>
+						<div class="summary">
+							<p>Participated to various side / internal projects. See below my tech sharing session about Java G1GC and JVisual VM.</p>
+						</div>
+						<ul class="highlights">
+							<li>Create new technical tests to evaluate candidate</li>
+							<li>Evaluate candidate during the recruitement process</li>
+							<li>Share knowledge during tech sharing sessions</li>
+							<li>POC Company&#x27;s time tracking phone app</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								JCDecaux
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									November 2017
+								</span>
+								<span class="endDate">
+									- June 2018
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Full Stack Developer (SFEIR)
+						</div>
+						<div class="website">
+							<a href="https://www.jcdecaux.fr/">https://www.jcdecaux.fr/</a>
+						</div>
+						<div class="summary">
+							<p>Maintain and add new features on existing applications in charge of planning the outdoor furnitures maintenance.</p>
+						</div>
+						<ul class="highlights">
+							<li>Convince against bias such as &quot;This is an old app we don&#x27;t need tests&quot;</li>
+							<li>Provide metrics to increase code quality</li>
+							<li>Promote unit and integration tests</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								GROUPE M6
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									January 2016
+								</span>
+								<span class="endDate">
+									- November 2017
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Full Stack Developer (SFEIR)
+						</div>
+						<div class="website">
+							<a href="https://www.groupem6.fr/">https://www.groupem6.fr/</a>
+						</div>
+						<div class="summary">
+							<p>Maintain / migrate / rewrite five applications in charge of the Advertising Network.</p>
+						</div>
+						<ul class="highlights">
+							<li>Rebuild the delivery process CI/CD (experience Chat/Ops)</li>
+							<li>Fix 5 years old performance issue</li>
+							<li>Use Java Proxy over JDBC connection to reverse first tier app business logic</li>
+							<li>Provide good quality index (Sonar, Fitnesse)</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Kyriba France
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									June 2015
+								</span>
+								<span class="endDate">
+									- January 2016
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Full Stack Developer (SFEIR)
+						</div>
+						<div class="website">
+							<a href="https://www.kyriba.fr/">https://www.kyriba.fr/</a>
+						</div>
+						<div class="summary">
+							<p>Participate to strategic busines app.</p>
+						</div>
+						<ul class="highlights">
+							<li>Implement features</li>
+							<li>Propose a different vision on the existing product in terms of refactoring</li>
+							<li>Provide tool facilitations to help the day to day job</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Blu Age
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									May 2013
+								</span>
+								<span class="endDate">
+									- December 2014
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							R&amp;D Software Engineer
+						</div>
+						<div class="website">
+							<a href="https://www.bluage.com/">https://www.bluage.com/</a>
+						</div>
+						<div class="summary">
+							<p>As the US subsidiary of Netfective Technology, Blu Age Corporation wanted to open a new office in Tampa FL and reinforce their partnership with Accenture.</p>
+						</div>
+						<ul class="highlights">
+							<li>Conception and realization of Eclipse IDE plugins to enhance the Blu Age software usability</li>
+							<li>Optimization of technical architecture</li>
+							<li>Intern and extern communication (India, Morocco, USA)</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Netfective Technology
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									February 2009
+								</span>
+								<span class="endDate">
+									- May 2013
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							R&amp;D Software Engineer
+						</div>
+						<div class="website">
+							<a href="https://www.bluage.com/">https://www.bluage.com/</a>
+						</div>
+						<div class="summary">
+							<p>Main stakeholder to provide evolutions and maintain the Blu Age ® Forward Engineering product.</p>
+						</div>
+						<ul class="highlights">
+							<li>Creation, fixes and improvement of generation cartridge for Blu Age Software</li>
+							<li>Analysis and architectural conception of Java applications</li>
+							<li>Management and enhancement of the automated build of the Eclipse based Blu Age product</li>
+						</ul>
+					</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Education</h2>
+					<section id="education">
+							<header>
+									<h3 class="institution">
+										Université de Pau et des Pays de l&#x27;Adour
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2007
+									</span>
+									<span class="endDate">
+										- 2009
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Master&#x27;s degree
+									</div>
+									<div class="area">
+										Information Technology
+									</div>
+							</div>
+							<header>
+									<h3 class="institution">
+										Université de Valenciennes et du Hainaut-Cambrésis
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2006
+									</span>
+									<span class="endDate">
+										- 2007
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Bachelor&#x27;s degree
+									</div>
+									<div class="area">
+										Information Technology
+									</div>
+							</div>
+							<header>
+									<h3 class="institution">
+										Université de Valenciennes et du Hainaut-Cambrésis
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2004
+									</span>
+									<span class="endDate">
+										- 2006
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Bachelor of Technology (BTech) Higher National Diploma
+									</div>
+									<div class="area">
+										Information Technology
+									</div>
+							</div>
+					</section>
+				</section>
+
+
+
+
+				<section class="section">
+					<h2 class='section-title'>Publications</h2>
+					<section id="publications">
+							<div class="item">
+								<span class="name">
+									<span class="website">
+										<a href="QuarterBack_G1GC.pdf">G1-GC</a>
+									</span>
+								</span>
+									<span class="publisher">
+										in Julian Sabos,
+									</span>
+									<span class="date">
+										10 December 2017
+									</span>
+								<div class="summary">
+									<p>Let's talk about the new default Garbage Collector G1-GC, have some inputs about what is exactly a garbage collector, what's exactly new about it and why we talk about it now but G1 was release the first time in 2009 with Java SE 6 Update 14.</p>
+								</div>
+							</div>
+							<div class="item">
+								<span class="name">
+									<span class="website">
+										<a href="QuarterBack_VisualVM_Java-Mission-Control.pdf">Diagnose with VisualVM &amp;&amp; || Java Mission Control</a>
+									</span>
+								</span>
+									<span class="publisher">
+										in Julian Sabos,
+									</span>
+									<span class="date">
+										4 September 2017
+									</span>
+								<div class="summary">
+									<p>How to diagnose and isolate unexpected behaviours in your Java application using JDK tools.</p>
+								</div>
+							</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Skills</h2>
+					<section id="skills">
+						<div class="item">
+							<div class="name">
+								Java Fullstack
+							</div>
+							<ul class="keywords">
+								<li>Java</li>
+								<li>Kotlin</li>
+								<li>Spring Ecosystem</li>
+								<li>JPA</li>
+								<li>Hibernate</li>
+								<li>MongoDB</li>
+								<li>Kafka</li>
+								<li>Elasticsearch</li>
+								<li>Git</li>
+								<li>Maven</li>
+								<li>SQL</li>
+								<li>Sonar</li>
+								<li>JUnit</li>
+								<li>Fitnesse</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Devops
+							</div>
+							<ul class="keywords">
+								<li>Jenkins</li>
+								<li>Shell</li>
+								<li>RocketChat</li>
+								<li>Gitlab</li>
+								<li>ChatOps</li>
+								<li>CI/CD</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Project Management
+							</div>
+							<ul class="keywords">
+								<li>JIRA</li>
+								<li>Agile</li>
+								<li>Scrum</li>
+								<li>Confluence</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Software Development
+							</div>
+							<ul class="keywords">
+								<li>TDD</li>
+								<li>DDD</li>
+								<li>MVC Architecture</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Functionnal and co
+							</div>
+							<ul class="keywords">
+								<li>OCaml</li>
+								<li>Scala</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Misc
+							</div>
+							<ul class="keywords">
+								<li>Intellij</li>
+								<li>Eclipse</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>jQuery</li>
+								<li>Python</li>
+								<li>Angular</li>
+								<li>Ant</li>
+								<li>Groovy</li>
+								<li>Karma</li>
+								<li>Jasmine</li>
+								<li>UML</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Languages</h2>
+					<section id="languages">
+						<div class="item">
+							<div class="language">
+								fr
+							</div>
+							<div class="fluency">
+								<em>Native Speaker</em>
+							</div>
+						</div>
+						<div class="item">
+							<div class="language">
+								en
+							</div>
+							<div class="fluency">
+								<em>Native Speaker</em>
+							</div>
+						</div>
+						<div class="item">
+							<div class="language">
+								es
+							</div>
+							<div class="fluency">
+								<em>Professional working proficency</em>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title' class='section-title'>Interests</h2>
+					<section id="interests">
+						<div class="item">
+							<div class="name">
+								Wildlife
+							</div>
+							<ul class="keywords">
+								<li>Hicking</li>
+								<li>Woofing</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Coffee
+							</div>
+							<ul class="keywords">
+								<li>Aeropress</li>
+								<li>Expresso</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>References</h2>
+					<section id="references">
+						<div class="item">
+							<blockquote class="reference">
+								&#8220;&#32;Julian was an amazing colleague : Not only for his good technical skills, he has also a capacity of adaptability in various domains. He is able to explain conception features with technical and functional teams. As a project manager, this is a person that we can trust and exchange a lot because he was very available to help us.
+It was a pleasure to work with him. &#32;&#8221;
+							</blockquote>
+							<div class="name">
+								Julie L.
+							</div>
+						</div>
+						<div class="item">
+							<blockquote class="reference">
+								&#8220;&#32;Julian is not only a very high technical person, but also a very good teammate
+I have the pleasure to work with Julian during a project at Kyriba it was a real pleasure to work with him because
+- he was involved in is working,
+- he has a very good knowledge of Java technology and the Java environment 
+and in addition of his technical skill, he was working for the team with a mindset of constant improvement.
+
+I would be very happy to work with him again&#32;&#8221;
+							</blockquote>
+							<div class="name">
+								Guillaume Brusset
+							</div>
+						</div>
+						<div class="item">
+							<blockquote class="reference">
+								&#8220;&#32;Julian shows a deep technological knowledge and high efficiency in projects with tight deadlines. This is not often found in one person. And he gets things done. He never gives up. Strongly recommended&#32;&#8221;
+							</blockquote>
+							<div class="name">
+								Youssef RIDENE, Ph.D.
+							</div>
+						</div>
+					</section>
+				</section>
+		</div>
+	</body>
+
+</html>
