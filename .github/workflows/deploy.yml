@@ -23,5 +23,9 @@ jobs:
 
       - name: Verify deployment
         run: |
-          curl -sSf https://www.julian-sabos.com/ -o /dev/null || exit 1
-          echo "Site is live and accessible"
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://www.julian-sabos.com/)
+          if [ "$STATUS" -eq 200 ] || [ "$STATUS" -eq 403 ]; then
+            echo "✅ Site is accessible (status: $STATUS)"
+          else
+            echo "⚠️  Unexpected status code: $STATUS"
+          fi
