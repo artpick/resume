@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.OVH_USER }}
           password: ${{ secrets.OVH_PASSWORD }}
           local-dir: ./public/
-          server-dir: /home/juliansasm/
+          server-dir: /www/
           dangerous-clean-slate: true
         env:
           ENVIRONMENT: prod
