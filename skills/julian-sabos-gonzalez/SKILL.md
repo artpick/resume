@@ -1,11 +1,11 @@
 ---
 name: julian-sabos-gonzalez
-description: Senior Java/Spring Implementation Engineer with 15+ years experience in full-stack development, DevOps, and technical leadership. Use when you need expertise in Java architecture, Spring Boot applications, CI/CD pipelines, technical mentoring, code reviews, or enterprise application migration. Specializes in performance optimization, legacy modernization, and team leadership.
+description: Staff Engineer with 15+ years experience in Java/Spring. Use when you need expertise in Java architecture, Spring Boot applications, CI/CD pipelines, technical mentoring, code reviews, or enterprise application migration. Specializes in performance optimization, legacy modernization, and team leadership.
 license: Proprietary - © 2026 Julián Sabos González - All Rights Reserved
 copyright: © 2026 Julián Sabos González. Unauthorized use prohibited.
 metadata:
   author: Julián Sabos González
-  version: "1.0"
+  version: "1.1"
   expertise-level: senior
   primary-languages: Java, Kotlin, TypeScript
   primary-frameworks: Spring, Spring Boot, Angular
@@ -13,7 +13,7 @@ metadata:
 compatibility: Designed for code review, architecture design, DevOps consulting, Java/Spring development, and technical leadership scenarios
 ---
 
-# Julián Sabos González - Senior Implementation Engineer Skill
+# Julián Sabos González - Staff Engineer Skill
 
 > **⚠️ Copyright Notice**: This skill is proprietary. No copying, distribution, or commercial use is permitted without explicit written consent from Julián Sabos González. All content is © 2026 Julián Sabos González. All rights reserved.
 
@@ -21,11 +21,11 @@ compatibility: Designed for code review, architecture design, DevOps consulting,
 
 ## Overview
 
-This skill represents the professional expertise of **Julián Sabos González**, a Senior Implementation Engineer with over 15 years of experience specializing in Java, Spring ecosystem, DevOps practices, and technical leadership. Activate this skill when working on:
+This skill represents the professional expertise of **Julián Sabos González**, a **Staff Engineer** with over 15 years of experience specializing in **Java/Spring Expert** development, technical leadership, and enterprise architecture. Activate this skill when working on:
 
 - Java/Spring Boot application architecture and development
 - Enterprise application migration and modernization
-- CI/CD pipeline design and optimization (ChatOps, Jenkins)
+- CI/CD pipeline design and optimization (Jenkins, Git)
 - Technical leadership and team mentoring
 - Code quality improvement and review processes
 - Performance analysis and optimization
@@ -35,7 +35,7 @@ This skill represents the professional expertise of **Julián Sabos González**,
 
 ### 1. Java & Spring Ecosystem (Expert Level)
 
-**Technologies:** Java 8-21, Spring Boot, Spring Framework, Spring Data JPA, Spring MVC, Hibernate, JPA
+**Technologies:** Java 8-21, Spring Boot, Spring Framework, Spring Data JPA, Spring MVC, Hibernate
 
 **Use this skill when:**
 - Designing microservices architecture with Spring Boot
@@ -52,7 +52,7 @@ This skill represents the professional expertise of **Julián Sabos González**,
 
 ### 2. Full-Stack Development
 
-**Frontend:** Angular 10, Angular 18, TypeScript
+**Frontend:** Angular 10/18, TypeScript
 **Backend:** Java/Spring Boot, Tomcat 9
 
 **Use this skill when:**
@@ -62,23 +62,22 @@ This skill represents the professional expertise of **Julián Sabos González**,
 - Application replatforming from monolith to modern architecture
 
 **Experience Highlights:**
-- Prepared application replatforming from monolith (Spring Boot, Java 21, Angular 18) at Decathlon
+- Prepared application replatforming from monolith (Spring Boot, Java 21, Angular 10/18) at Decathlon
 - Maintained and enhanced advertising network applications at GROUPE M6
 - Added features to planning applications at JCDecaux
 
 ### 3. DevOps & CI/CD (Advanced Level)
 
-**Technologies:** Jenkins, CI/CD pipelines, ChatOps, Git, SVN, SonarQube, Fitnesse
+**Technologies:** Jenkins, CI/CD pipelines, Git, SVN, SonarQube, Fitnesse
 
 **Use this skill when:**
 - Designing and implementing CI/CD pipelines
-- Setting up ChatOps workflows
 - Integrating code quality tools (Sonar, Fitnesse)
 - Automating build and deployment processes
 - Improving delivery process maturity
 
 **Experience Highlights:**
-- Rebuilt delivery process CI/CD with ChatOps experience at GROUPE M6
+- Rebuilt delivery process with CI/CD integration at GROUPE M6
 - Managed Jenkins pipelines for enterprise applications
 - Promoted unit and integration testing culture
 - Fixed 5-year-old performance issues through CI/CD improvements
@@ -110,7 +109,7 @@ This skill represents the professional expertise of **Julián Sabos González**,
 - Implementing MDD/MDA approaches
 
 **Experience Highlights:**
-- Success on top 40 Forbes company tier-one app migration project (Nuxeo)
+- Successfully delivered tier-one application migration project for top 40 Forbes company (Nuxeo)
 - Rewrote advertising network applications (GROUPE M6)
 - Provided vision for product refactoring (Kyriba)
 - Developed MDD/MDA generation cartridges (Netfective/Blu Age)
@@ -124,7 +123,7 @@ This skill represents the professional expertise of **Julián Sabos González**,
 - Optimizing database queries with JPA/Hibernate
 
 **Experience Highlights:**
-- Fixed 5-year-old performance issues at GROUPE M6
+- Resolved 5-year-old performance issues at GROUPE M6
 - Technical presentations on Java G1GC garbage collector
 - Presented on JVisual VM & Java Mission Control
 - Optimized technical architecture (Blu Age)
@@ -133,14 +132,14 @@ This skill represents the professional expertise of **Julián Sabos González**,
 
 | Company | Role | Period | Key Technologies |
 |---------|------|--------|------------------|
-| Decathlon | Staff Engineer | June 2024 — Present | Team Leadership, Java, Spring Boot, Angular, Architecture Review |
-| Decathlon | Technical Lead | Feb 2022 — June 2024 | Spring, Tomcat 9, Angular 10/18, Spring Boot |
+| Decathlon | Staff Engineer | June 2024 — Present | Team Leadership, Java, Spring Boot, Angular, Architecture Review, Technical Mentoring |
+| Decathlon | Technical Lead | Feb 2022 — June 2024 | Java, Spring Boot, Tomcat 9, Angular 10/18 |
 | Nuxeo (Hyland) | Senior Implementation Engineer | June 2018 — May 2021 | Java, Kotlin, Spring, JPA, Hibernate |
 | SFEIR | Java EE Consultant | May 2015 — June 2018 | Java, Spring, Jenkins, Agile, Scrum |
-| JCDecaux | Full Stack Developer | Nov 2017 — June 2018 | Java, Spring, JUnit, Fitnesse, Sonar |
-| GROUPE M6 | Full Stack Developer | Jan 2016 — Nov 2017 | Java, Spring, Jenkins, CI/CD, ChatOps |
-| Kyriba | Full Stack Developer | June 2015 — Jan 2016 | Java, Spring, JPA, Hibernate, MongoDB |
-| Blu Age (Amazon) | R&D Software Engineer | May 2013 — Dec 2014 | Java, Eclipse, Plugin Development, Architecture |
+| JCDecaux | Full Stack Developer | Nov 2017 — June 2018 | Java, Spring, JUnit, Fitnesse, Sonar (via SFEIR) |
+| GROUPE M6 | Full Stack Developer | Jan 2016 — Nov 2017 | Java, Spring, Jenkins, CI/CD (via SFEIR) |
+| Kyriba France | Full Stack Developer | June 2015 — Jan 2016 | Java, Database (via SFEIR) |
+| Blu Age (Amazon) | R&D Software Engineer | May 2013 — Dec 2014 | Java, Eclipse, Plugin Development, International |
 | Netfective (Amazon) | R&D Software Engineer | Feb 2009 — May 2013 | Java, Git, SVN, MDD, MDA, MVC, UML2 |
 
 ## When to Activate This Skill
@@ -154,7 +153,6 @@ This skill represents the professional expertise of **Julián Sabos González**,
 - "I need a code review for my Java/Spring application"
 - "Help me refactor this monolithic application"
 - "What are best practices for technical mentoring?"
-- "How do I implement ChatOps in my development workflow?"
 
 ### ❌ Do not activate for:
 - Frontend-only work (React, Vue, without backend integration)
@@ -204,4 +202,4 @@ This skill has been validated against real-world enterprise applications includi
 - Forbes 500 company tier-one application migrations
 - Large-scale advertising network systems
 - Legal marking generation software
-- outdoor furniture maintenance planning applications
+- Outdoor furniture maintenance planning applications
