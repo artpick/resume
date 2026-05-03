@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.julian-sabos.com/sitemap.xml
+
+# Crawl-delay: 2

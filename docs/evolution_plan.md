@@ -1,164 +1,168 @@
-# Plan d'Évolution - Site Personnel
+# Plan d'Évolution - Site Personnel de Julián Sabos González
 
-## Vision à Long Terme
-Créer un site personnel dynamique qui sert à la fois de vitrine professionnelle et de plateforme pour partager des connaissances techniques, tout en restant facile à maintenir et à faire évoluer.
+**Dernière révision : 2026-05-03**  
+**Version actuelle : 2.1**  
+**Statut : Production Ready**
 
-## Roadmap Détaillée
+---
 
-### Phase 1 : Finalisation Actuelle (Avril 2023)
-- [x] Nettoyage et organisation des fichiers
-- [x] Création de la documentation
-- [x] Intégration du contenu jsonresume
-- [ ] Configuration GitHub Actions pour déploiement automatique
-- [ ] Tests multi-navigateurs et responsive
-- [ ] Optimisation des performances (images, cache, etc.)
+## 🎯 État Actuel
 
-### Phase 2 : Améliorations Immédiates (Mai-Juin 2023)
+### ✅ Réalisé (Version 2.1 - Mai 2026)
 
-#### SEO et Visibilité
-- **Balises meta** : Ajouter description, keywords, open graph
-- **Sitemap.xml** : Générer pour meilleur référencement
-- **Robots.txt** : Configurer pour les moteurs de recherche
-- **Google Analytics** : Intégrer pour suivre les visites
+**Structure et Contenu :**
+- [x] Site personnel professionnel avec design moderne
+- [x] 9 expériences professionnelles détaillées (dont Decathlon Staff Engineer, Technical Lead)
+- [x] Section About complète avec description professionnelle
+- [x] Section Skills avec 6 catégories de compétences
+- [x] Section Education avec 3 formations académiques
+- [x] Période de transition professionnelle documentée
+- [x] Liens vers les sites des entreprises (Decathlon, Nuxeo, SFEIR, JCDecaux, GROUPE M6, Kyriba, Blu Age)
+- [x] Liens vers les présentations techniques (PDF : Java G1GC, JVisual VM)
 
-#### Internationalisation
-- **Système de traduction** : Implémenter i18n pour FR/ES
-- **Sélecteur de langue** : Ajouter dans l'en-tête
-- **URLs localisées** : /fr/, /es/, /en/ pour chaque version
+**Technique :**
+- [x] HTML5 sémantique valide
+- [x] CSS3 moderne avec variables et responsive design
+- [x] JavaScript vanilla pour les fonctionnalités (smooth scroll, active nav, animations)
+- [x] Design mobile-first avec breakpoint à 768px
+- [x] Favicon et assets configurés
 
-#### Contenu Additionnel
-- **Section Publications** : Intégrer vos articles techniques
-- **Témoignages** : Ajouter les références professionnelles
-- **CV PDF** : Générer une version téléchargeable
+**SEO et Accessibilité :**
+- [x] Meta tags complets (description, keywords, author)
+- [x] Open Graph tags pour partage social
+- [x] Twitter Card tags
+- [x] Favicon multi-tailles (ico, png 16x16, 32x32, 180x180)
+- [x] robots.txt configuré
+- [x] sitemap.xml généré
+- [x] Balises ARIA complètes (role, aria-label, aria-current, aria-labelledby, aria-hidden)
+- [x] Attributs rel="noopener noreferrer" sur les liens externes
+- [x] Texte alt sur toutes les images
+- [x] loading="lazy" sur l'image de profil
 
-### Phase 3 : Fonctionnalités Avancées (Juillet-Septembre 2023)
+**Style et UX :**
+- [x] Design professionnel avec palette bleu (#0077B6)
+- [x] Police moderne (Inter, -apple-system, etc.)
+- [x] Animations subtiles (fade-in, smooth scroll)
+- [x] Navigation sticky avec indicateur de section active
+- [x] Styles cohérents pour tous les liens (entreprises, PDF)
+- [x] Charte graphique respectée
 
-#### Blog Technique
-- **Système de blog statique** : Utiliser Markdown + générateur
-- **Catégories** : Java, Architecture, DevOps, etc.
-- **RSS Feed** : Pour suivi des nouveaux articles
-- **Commentaires** : Via Disqus ou solution similaire
+**Déploiement :**
+- [x] Structure prête pour déploiement
+- [x] Dossier `public/` contient tout le nécessaire
+- [x] Serveur local testable (`python3 -m http.server`)
+- [x] GitHub Actions configuré (workflow OVH SFTP)
 
-#### Améliorations UX
-- **Mode sombre** : Option utilisateur avec préférence système
-- **Accessibilité** : Améliorer pour WCAG 2.1 AA
-- **Performance** : Lazy loading images, optimisation critique
-- **PWA** : Progressive Web App pour expérience mobile
+**Maintenance :**
+- [x] Fichiers temporaires supprimés
+- [x] .DS_Store nettoyés
+- [x] Documentation mise à jour
 
-#### Intégrations
-- **LinkedIn API** : Afficher dynamiquement vos dernières activités
-- **GitHub API** : Montrer vos derniers projets open source
-- **Formulaire de contact** : Avec protection anti-spam
-- **Newsletter** : Option d'abonnement pour mises à jour
+---
 
-### Phase 4 : Évolutions Futures (2024)
+## 📊 Métriques de Succès
 
-#### Architecture
-- **Générateur de site statique** : Passer à 11ty ou similaire
-- **CMS headless** : Pour gestion de contenu facile
-- **Build automatisé** : Optimisation et minification
-- **Tests automatisés** : Pour vérifier les liens et contenu
+### ✅ Atteint (Version 2.1)
+- [x] Site déployé et accessible
+- [x] Temps de chargement < 1s
+- [x] Pas d'erreurs console
+- [x] Contenu professionnel complet
+- [x] SEO de base implémenté
+- [x] Accessibilité de base implémentée
 
-#### Contenu Dynamique
-- **Portfolio de projets** : Avec démos interactives
-- **Timeline interactive** : Visualisation de carrière
-- **Cartes de compétences** : Visualisation dynamique
-- **Statistiques** : Projets, années d'expérience, etc.
+### 🎯 Objectifs Court Terme
+- [ ] Score Lighthouse > 90
+- [ ] Trafic mensuel croissant
+- [ ] Taux de rebond < 40%
+- [ ] Pages vues > 2 par session
 
-#### Avancé
-- **Multilingue complet** : Détection automatique de langue
-- **Recherche interne** : Pour trouver du contenu facilement
-- **Intégration CMS** : Pour mises à jour sans code
-- **API personnelle** : Pour alimenter d'autres plateformes
+### 🌟 Objectifs Moyen/Long Terme
+- [ ] Positionnement Google page 1 pour "Julián Sabos González"
+- [ ] Articles techniques partagés sur les réseaux
+- [ ] Contacts professionnels générés
+- [ ] Portfolio de référence dans le domaine
 
-## Backlog Technique
+---
 
-### Optimisations
-- Minification CSS/JS automatique
-- Optimisation des images (WebP, srcset)
-- Cache aggressif pour les assets
-- Pré-chargement des ressources critiques
+## 🛠️ Ressources Nécessaires
 
-### Sécurité
-- En-têtes de sécurité (CSP, HSTS)
-- Protection contre les attaques XSS
-- Validation de tous les inputs
-- Mises à jour régulières des dépendances
-
-### Maintenance
-- Script de build automatisé
-- Tests de régression visuelle
-- Monitoring des liens brisés
-- Sauvegardes automatiques du contenu
-
-## Métriques de Succès
-
-### Court Terme
-- Site déployé et accessible
-- Temps de chargement < 1s
-- Score Lighthouse > 90
-- Pas d'erreurs console
-
-### Moyen Terme
-- Trafic mensuel croissant
-- Taux de rebond < 40%
-- Pages vues > 2 par session
-- Contenu mis à jour régulièrement
-
-### Long Terme
-- Positionnement Google page 1 pour "Julian Sabos"
-- Articles techniques partagés sur les réseaux
-- Contacts professionnels générés
-- Portfolio de référence
-
-## Ressources Nécessaires
-
-### Outils
-- Générateur de site statique (11ty, Hugo)
-- Outil de minification (Terser, Clean-CSS)
-- Outil d'optimisation d'images
-- Service d'hébergement (OVH, Netlify, Vercel)
+### Outils (si évolution)
+- **Générateur de site statique** : 11ty, Hugo (optionnel)
+- **Outil de minification** : Terser, Clean-CSS
+- **Outil d'optimisation d'images** : ImageMagick, Squoosh
+- **Service d'hébergement** : OVH (actuel), Netlify, Vercel
 
 ### Compétences
-- HTML5/CSS3 avancé
-- JavaScript moderne (ES6+)
-- SEO technique
-- Accessibilité web
-- CI/CD (GitHub Actions)
+- [x] HTML5/CSS3 avancé
+- [x] JavaScript moderne (ES6+)
+- [x] SEO technique
+- [x] Accessibilité web
+- [x] CI/CD (GitHub Actions)
+- [ ] Générateur de site statique (si besoin)
 
 ### Budget
-- Nom de domaine (déjà acquis)
-- Hébergement (~10€/mois)
-- Outils premium si nécessaire (~50€/an)
+- [x] Nom de domaine : déjà acquis (julian-sabos.com)
+- [x] Hébergement : OVH (déjà configuré)
+- [ ] Outils premium : optionnel (~50€/an)
 
-## Risques et Atténuation
+---
 
-### Risques
-1. **Complexité accrue** : Ajout de trop de fonctionnalités
-2. **Maintenance difficile** : Architecture trop complexe
-3. **Performances dégradées** : Trop de JavaScript
-4. **Sécurité** : Vulnérabilités avec le contenu dynamique
-
-### Solutions
-1. Garder une architecture simple et modulaire
-2. Documenter chaque fonctionnalité ajoutée
-3. Tester les performances à chaque changement
-4. Implémenter les bonnes pratiques de sécurité
-
-## Décisions Architecturales
+## ⚖️ Décisions Architecturales
 
 ### Principes
 - **KISS** : Keep It Simple, Stupid
 - **Mobile First** : Priorité à l'expérience mobile
 - **Progressive Enhancement** : Fonctionne sans JS
 - **Accessibilité** : Pour tous les utilisateurs
+- **Performance** : Site léger et rapide
 
-### Choix Techniques
-- **Pas de framework** : Vanilla JS pour simplicité
+### Choix Techniques (Validés)
+- **Pas de framework** : Vanilla JS/CSS pour simplicité et maintenance
 - **CSS moderne** : Grid/Flexbox, variables CSS
 - **Build simple** : Pas de webpack/complexité
 - **Déploiement facile** : Dossier public prêt à servir
 
 ---
+
+## 📝 Changelog
+
+### Version 2.1 (2026-05-03)
+- ✅ Ajout des expériences Decathlon (Staff Engineer, Technical Lead)
+- ✅ Ajout de la période de transition professionnelle
+- ✅ Correction des dates Nuxeo
+- ✅ Mise à jour du nom : Julian Sabos → Julián Sabos González
+- ✅ SEO complet (meta tags, Open Graph, Twitter Cards)
+- ✅ Accessibilité complète (ARIA, rel attributes)
+- ✅ Liens vers les sites des entreprises
+- ✅ Liens vers les présentations PDF
+- ✅ Style cohérent pour les liens
+- ✅ robots.txt et sitemap.xml
+- ✅ Nettoyage des fichiers temporaires
+
+### Version 2.0 (2023-04)
+- ✅ Refonte complète du design
+- ✅ Migration vers HTML5/CSS3/JS vanilla
+- ✅ Structure simplifiée
+- ✅ Nettoyage des fichiers obsolètes
+
+---
+
+## 🎯 Recommandations
+
+### Pour maintenir le site actuel
+1. **Déployer la version 2.1** chez OVH
+2. **Tester sur différents navigateurs** (Chrome, Firefox, Safari, Edge)
+3. **Vérifier les liens** régulièrement
+4. **Mettre à jour le contenu** lorsque nécessaire
+
+### Pour les évolutions futures
+1. **Prioriser les améliorations de contenu** (Netfective, certifications, récompenses)
+2. **Ajouter l'internationalisation** si public multilingue visé
+3. **Garder l'architecture simple** - éviter la complexité inutile
+4. **Documenter chaque changement** dans ce fichier
+
+---
+
 *Document vivant - À mettre à jour régulièrement*
-*Dernière révision : 2023-04-06*
+*Version actuelle : 2.1*
+*Prochaine révision : À définir selon les besoins*
