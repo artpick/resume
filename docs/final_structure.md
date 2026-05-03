@@ -1,110 +1,124 @@
-# Structure Finale du Projet - Version 2.0
+# Structure Finale du Projet - Version 2.1
 
-## Arbre des Fichiers (Après Nettoyage)
+**Dernière mise à jour : 2026-05-03**
+**Statut : Production Ready**
+
+---
+
+## 📁 Arbre des Fichiers
 
 ```
 resume/
 ├── .github/
-│   └── workflows/          # Prêt pour GitHub Actions CI/CD
-├── .gitignore              # Configuration Git
-├── .idea/                 # Configuration IntelliJ IDEA
-├── .vscode/               # Configuration Visual Studio Code
-├── docs/                  # Documentation complète
-│   ├── evolution_plan.md  # Roadmap des évolutions futures
-│   ├── final_structure.md # Ce document
-│   └── project_history.md # Historique complet du projet
-├── public/                # ✅ Dossier de déploiement - TOUT EST ICI
-│   ├── assets/            # Fichiers statiques et téléchargeables
-│   │   └── QuarterBack_VisualVM_Java-Mission-Control.pdf  # Votre présentation (332KB)
-│   ├── css/               # Styles CSS optimisés
-│   │   └── styles.css    # Fichier CSS extrait (7.7KB)
-│   ├── images/            # Images utilisées par le site
-│   │   └── julian_profile.jpeg  # Photo de profil (106KB)
-│   └── index.html         # Page principale avec contenu intégré (26KB)
-├── README.md              # Documentation principale mise à jour (4.8KB)
-└── LICENCE.txt             # Licence MIT
+│   └── workflows/                    # Workflows GitHub Actions CI/CD
+├── .gitignore
+├── .idea/                           # Configuration IntelliJ IDEA
+├── .vscode/                         # Configuration Visual Studio Code
+├── CHECKLIST.md                     # Checklist complète du projet
+├── docs/
+│   ├── evolution_plan.md            # Roadmap et évolutions futures
+│   ├── final_structure.md           # Ce document
+│   └── project_history.md           # Historique complet du projet
+├── LICENCE.txt
+├── Profile.pdf                      # CV complet en PDF (source)
+├── README.md
+└── public/                          # ✅ Dossier de déploiement - TOUT EST ICI
+    ├── assets/
+    │   ├── QuarterBack_G1GC.pdf                 # Présentation technique (1.1MB)
+    │   └── QuarterBack_VisualVM_Java-Mission-Control.pdf  # Présentation technique (338KB)
+    ├── css/
+    │   └── styles.css               # Fichier CSS principal (375 lignes)
+    ├── favicon.ico                  # Favicon du site
+    ├── images/
+    │   └── julian_profile.jpeg      # Photo de profil (200x200px, 9.3KB)
+    ├── index.html                   # Page principale (409 lignes)
+    ├── robots.txt                  # Configuration pour les robots
+    └── sitemap.xml                 # Plan du site pour SEO
 ```
 
-## Détails des Fichiers Clés
+---
+
+## 📄 Détails des Fichiers Clés
 
 ### public/index.html
-- **Taille** : 26KB (après extraction CSS)
-- **Langue** : Anglais (version principale)
+- **Taille** : 409 lignes
+- **Langue** : Anglais
+- **Encodage** : UTF-8
+- **DOCTYPE** : HTML5
 - **Structure** :
-  - En-tête professionnel avec photo et titre
-  - Navigation sticky
-  - 4 sections : About, Experience, Skills, Education
-  - Footer avec liens sociaux
+  - En-tête professionnel avec photo et titre (Julián Sabos González)
+  - Navigation sticky avec indicateurs visuels
+  - 10 expériences détaillées (Decathlon x2, Transition, Nuxeo, SFEIR, JCDecaux, GROUPE M6, Kyriba France, Netfective Technology, Blu Age)
+  - Section About avec description professionnelle
+  - Section Skills avec 6 compétences
+  - Section Education avec 3 formations
+  - Footer avec liens sociaux et copyright
 - **Optimisations** :
-  - CSS extrait dans fichier séparé
-  - Images optimisées
+  - Meta tags SEO complets (description, keywords, author)
+  - Open Graph tags pour partage social
+  - Twitter Card tags
+  - Favicon multi-tailles
   - Balises sémantiques HTML5
+  - Accessibilité ARIA complète
   - Responsive design mobile-first
+  - Liens vers les sites des entreprises
+  - Liens vers les présentations techniques (PDF)
 
 ### public/css/styles.css
-- **Taille** : 7.7KB
+- **Taille** : 375 lignes
 - **Structure** :
-  - Variables CSS en haut
+  - Variables CSS en haut (`:root`)
   - Reset et base
   - Layout et composants
-  - Sections spécifiques
-  - Responsive design
-  - Animations
-- **Avantages** :
-  - Cache navigateur efficace
-  - Maintenance facilitée
-  - Organisation claire
+  - Sections spécifiques (header, nav, sections, footer)
+  - Responsive design (@media 768px)
+  - Animations (@keyframes fadeIn)
+  - Styles pour liens d'entreprise et présentations
+- **Variables de couleur** :
+  - `--primary-color: #0077B6` (bleu professionnel)
+  - `--secondary-color: #48CAE4`
+  - `--accent-color: #00B4D8`
+  - `--text-dark: #233554`
+  - `--text-light: #FFFFFF`
+  - `--background: #FFFFFF`
+  - `--background-alt: #F8F9FA`
+
+### public/robots.txt
+- **Contenu** : Autorise tous les robots, pointe vers sitemap.xml
+- **Mise à jour** : 2026-05-03
+
+### public/sitemap.xml
+- **URLs** : 5 URLs (racine + 4 sections principales)
+- **Fréquence** : Mensuelle pour la racine, annuelle pour les sections
+- **Priorités** : 1.0 (racine), 0.6-0.9 (sections)
+- **Mise à jour** : 2026-05-03
+
+### public/favicon.ico
+- **Taille** : 534 bytes
+- **Format** : ICO (avec version PNG référencée)
 
 ### public/assets/
-- **QuarterBack_VisualVM_Java-Mission-Control.pdf** (332KB)
-  - Votre présentation technique
-  - Accessible via lien direct
-  - Prêt pour téléchargement
+- **QuarterBack_G1GC.pdf** (1.1MB) : Présentation technique sur Java G1GC
+- **QuarterBack_VisualVM_Java-Mission-Control.pdf** (338KB) : Présentation technique sur JVisual VM
 
-## Modifications Récentes (6 Avril 2023)
+---
 
-### Nettoyage Effectué
-✅ **Fichiers supprimés** (obsolètes) :
-- `CODE_ANALYSIS_REPORT.md`
-- `fichier.htaccess`, `fichier.htpasswd`
-- `index_draft.html`, `index_es.html`, `index_fr.html`
-- Dossiers : `tests/`, `jsonresume/`, `binaries/`
-- CSS ancien : `julian_sabos.css`
-- Images inutilisées : `src_002.png`, `src_003.png`, etc.
-
-✅ **Fichiers réorganisés** :
-- `julian_profile.jpeg` : `images/images/` → `images/`
-- `QuarterBack_VisualVM_Java-Mission-Control.pdf` : `binaries/` → `assets/`
-
-✅ **CSS extrait** :
-- Du HTML vers fichier séparé `styles.css`
-- Meilleure maintenabilité
-- Meilleure performance (cache)
-
-### Corrections Apportées
-✅ **Chemins corrigés** :
-- Image profil : `../images/` → `images/`
-- CSS intégré → lien vers `css/styles.css`
-
-✅ **Structure optimisée** :
-- Dossier `public/` contient tout pour le déploiement
-- Dossier `docs/` contient toute la documentation
-- Dossier `.github/` prêt pour CI/CD
-
-## Statistiques du Projet
+## 📊 Statistiques du Projet
 
 ### Taille Totale
-- **Dossier public/** : ~450KB (prêt à déployer)
-- **Dossier docs/** : ~17KB (documentation)
-- **Total projet** : ~500KB (sans .git)
+- **Dossier public/** : ~1.6MB (prêt à déployer)
+- **Dossier docs/** : ~25KB (documentation)
+- **Total projet** : ~1.8MB (sans .git)
 
 ### Performance Estimée
 - **Temps de chargement** : < 1s (cache vide)
-- **Requêtes HTTP** : 3 (HTML + CSS + FontAwesome CDN)
-- **Score Lighthouse** : 95+ (estimé)
+- **Requêtes HTTP** : 3 (HTML + CSS + Font Awesome CDN)
+- **Score Lighthouse estimé** : 95+
 - **Accessibilité** : WCAG 2.1 AA compatible
 
-## Déploiement
+---
+
+## 🚀 Déploiement
 
 ### Méthode 1 : Déploiement Manuel
 ```bash
@@ -112,23 +126,26 @@ resume/
 scp -r public/* user@votre-serveur:/chemin/vers/le/site
 ```
 
-### Méthode 2 : GitHub Actions (recommandé)
+### Méthode 2 : Serveur Local (Test)
+```bash
+cd public
+python3 -m http.server 8000
+# Ouvrir : http://localhost:8000
+```
+
+### Méthode 3 : GitHub Actions (recommandé)
 1. Configurer le workflow dans `.github/workflows/deploy.yml`
-2. Pousser vers la branche `main` ou `gh-pages`
-3. Déploiement automatique vers OVH/Netlify/Vercel
+2. Pousser vers la branche `master`
+3. Déploiement automatique vers OVH via SFTP
 
-### Méthode 3 : FTP/SFTP
-- Utiliser FileZilla ou client FTP
-- Transférer tout le contenu de `public/`
-- S'assurer que `index.html` est le fichier par défaut
+---
 
-## Maintenance Future
+## 🔧 Maintenance Future
 
-### Ajouter une nouvelle section
-1. Modifier `public/index.html`
-2. Ajouter le HTML nécessaire
-3. Ajouter les styles dans `public/css/styles.css`
-4. Tester localement
+### Ajouter une nouvelle expérience
+1. Modifier `public/index.html` dans la section Experience
+2. Ajouter le HTML avec la structure existante
+3. Tester localement
 
 ### Mettre à jour le contenu
 1. Modifier le texte dans `public/index.html`
@@ -136,34 +153,68 @@ scp -r public/* user@votre-serveur:/chemin/vers/le/site
 3. Ajouter des images dans `public/images/` si nécessaire
 4. Tester et déployer
 
-### Ajouter une traduction
-1. Dupliquer `public/index.html` → `public/index_fr.html`
-2. Traduire tout le contenu
-3. Ajouter un sélecteur de langue
-4. Configurer le routage
-
-## Bonnes Pratiques
-
-✅ **À faire** :
-- Toujours tester localement avant déploiement
-- Minifier le CSS avant production
-- Optimiser les images (WebP si possible)
-- Vérifier les liens avant déploiement
-
-❌ **À éviter** :
-- Modifier directement le serveur (toujours via Git)
-- Laisser des fichiers inutilisés
-- Oublier de mettre à jour la documentation
-- Déployer sans tester
-
-## Prochaines Étapes
-
-1. **Configurer GitHub Actions** pour déploiement automatique
-2. **Tester localement** avec différents navigateurs
-3. **Déployer en production** chez OVH
-4. **Configurer le domaine** et HTTPS
-5. **Monitorer les performances** avec Google Analytics
+### Ajouter un nouveau PDF
+1. Placer le fichier dans `public/assets/`
+2. Ajouter le lien dans la section appropriée
+3. Tester le lien
 
 ---
-*Document généré le 6 Avril 2023*
-*Projet : Refonte du site personnel - Version 2.0*
+
+## ✅ Bonnes Pratiques
+
+**À faire :**
+- Toujours tester localement avant déploiement
+- Vérifier les liens avant déploiement
+- Maintenir la documentation à jour
+- Utiliser Git pour toutes les modifications
+
+**À éviter :**
+- Modifier directement le serveur (toujours via Git)
+- Laisser des fichiers inutilisés
+- Déployer sans tester
+
+---
+
+## 📝 Historique des Modifications
+
+### Modifications Récentes (2026-05-03)
+✅ **Expériences ajoutées** :
+- Staff Engineer @ Decathlon (juin 2024 - Present)
+- Technical Lead @ Decathlon (février 2022 - juin 2024)
+- Période de transition (mai 2021 - février 2022)
+
+✅ **Expérience corrigée** :
+- Nuxeo : juin 2018 - mai 2021 (au lieu de "Present")
+
+✅ **Nom mis à jour** :
+- Julian Sabos → Julián Sabos González
+
+✅ **Améliorations SEO** :
+- Meta description, keywords, author
+- Open Graph tags complets
+- Twitter Card tags
+- Favicon multi-tailles
+
+✅ **Accessibilité** :
+- Balises ARIA (role, aria-label, aria-current, aria-labelledby, aria-hidden)
+- Attributs rel="noopener noreferrer" sur liens externes
+- Texte alt amélioré
+
+✅ **Liens ajoutés** :
+- Liens vers les sites des entreprises (Decathlon, Nuxeo, SFEIR, JCDecaux, GROUPE M6, Kyriba, Netfective Technology, Blu Age)
+- Liens vers les présentations techniques (PDF)
+- Mention "Design inspired by Brittany Chiang" dans le footer
+
+✅ **Mentions de rachat** :
+- Blu Age et Netfective Technology : rachetés par Amazon
+- Nuxeo : racheté par Hyland
+
+✅ **Style amélioré** :
+- Styles cohérents pour tous les liens
+- Utilisation de la charte graphique (--primary-color, --accent-color)
+- Animations de transition
+
+---
+
+*Document généré le 2026-05-03*
+*Projet : Site personnel de Julián Sabos González - Version 2.1*
