@@ -3,4 +3,12 @@ Allow: /
 
 Sitemap: https://www.julian-sabos.com/sitemap.xml
 
-# Crawl-delay: 2
+# Disallow crawling of asset files (they're linked from the main page anyway)
+Disallow: /assets/
+
+# Allow images and CSS
+Allow: /images/
+Allow: /css/
+
+# Crawl delay for polite crawling
+Crawl-delay: 1

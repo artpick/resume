@@ -406,3 +406,19 @@ footer {
     color: #718096;
     margin: 0 0.25rem;
 }
+
+/* Sitemap link styling */
+.sitemap-link {
+    margin-left: 0.5rem;
+    color: #718096;
+}
+
+.sitemap-link a {
+    color: #718096;
+    text-decoration: none;
+}
+
+.sitemap-link a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
